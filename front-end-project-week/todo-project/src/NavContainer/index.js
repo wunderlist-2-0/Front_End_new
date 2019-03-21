@@ -7,7 +7,7 @@ export default class NavContainer extends Component {
   render() {
     return (
       <div className='noteButtonContainer'>
-            <p className='titleNav'>Lambda <br />Notes</p>
+            <p className='titleNav'>WunderList <br />2.0</p>
             <div className='navDiv'> 
             <NavLink exact to="/" className='button'>View Your Notes</NavLink>  
           <NavLink exact to="/create-note" className='button'>+Create New Note</NavLink>   
