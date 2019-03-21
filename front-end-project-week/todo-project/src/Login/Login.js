@@ -39,7 +39,7 @@ class Login extends Component {
     return (
       <Form className="login-form">
       <div className='loginContainer'>
-        <h3>Lambda Notes</h3>
+        <h3>WunderList 2.0</h3>
         <div>Please Login</div>
         <FormGroup>
           <Input
