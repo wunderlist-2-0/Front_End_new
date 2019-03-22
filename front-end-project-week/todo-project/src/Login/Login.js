@@ -20,11 +20,13 @@ class Login extends Component {
 
   login() {
     axios
-      .post('https://fsw-14-project-notes.herokuapp.com/login', {username: this.state.username, password: this.state.password})
+      .post('https://wunderlist-buildweek.herokuapp.com/login', {username: this.state.username, password: this.state.password})
       .then(response => {
-        console.log(response)
-        const user = response.data.welcome
-        const id = response.data.id
+        console.log('login user',response.data);
+        localStorage.setItem('token', response.data.token);
+        // debugger;
+        const user = response.data.username;
+        const id = response.data.id;
         localStorage.setItem('username', user)
         localStorage.setItem('id', id)
         window.location.reload()
