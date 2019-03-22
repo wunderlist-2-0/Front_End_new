@@ -20,9 +20,9 @@ class Login extends Component {
 
   registerUser() {
     axios 
-      .post('https://fsw-14-project-notes.herokuapp.com/register', {username: this.state.username, password: this.state.password})
+      .post('https://wunderlist-buildweek.herokuapp.com/register', {username: this.state.username, password: this.state.password})
       .then(response => {
-        console.log(response)
+        console.log('register user', response);
         window.location.replace('/')
       })
       .catch(error => {
